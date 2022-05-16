@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM-D</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <button class="menu__btn">
+      <img class="menu__btn-img" src="images/menu__btn-img.svg" alt="burger menu">
+    </button>
+    <div class="burger-menu burger-menu--close">
+      <div class="burger-menu__inner">
+        <button class="burger-menu__btn-close">
+          <img class="burger-menu__icon" src="images/close-menu-icon.svg" alt="icon">
+        </button>
+        <a class="burger-menu__logo" href="#">
+          <img class="burger-menu__logo-img" src="images/burger-logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="burger-menu__nav">
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#">
+              Виды строительства
+            </a>
+            <ul class="burger-submenu__list">
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Каркасные дома
+                </a>
+              </li>
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Дома из клеёного бруса
+                </a>
+              </li>
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Фахверковые дома
+                </a>
+              </li>
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Дома из брёвен
+                </a>
+              </li>
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Беседки
+                </a>
+              </li>
+              <li class="burger-submenu__item">
+                <a class="burger-submenu__link" href="#">
+                  - Ремонт и отделка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#">
+              Наши работы
+            </a>
+          </li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">
+              Отзывы клиентов
+            </a>
+          </li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="#">
+              Партнеры
+            </a>
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#"><img class="header__logo-img" src="images/header__logo-img.png"
+              alt="logo">
+          </a>
+          <a class="header__logo-link-mobile" href="#"><img class="header__logo-img-mobile" src="images/logo-mobile.svg"
+            alt="logo">
+        </a>
+          <div class="header__logo-descr">
+            Строительство деревянных домов <br>
+            <span class="header__logo-descr-2"> за <span class="logo-num">45 </span>дней
+            </span>
+          </div>
+        </div>
+        <div class="header__social">
+          <p class="header__social-text">
+            Нажмите, чтобы начать общение
+          </p>
+          <a class="header__social-link header__social-Viber" href="#">Viber</a>
+          <a class="header__social-link header__social-Telegram" href="#">Telegram</a>
+        </div>
+        <div class="header__phone">
+          <a class="header__phone-link" href="tel:+380982715035">+38 (098) 271-50-35</a>
+          <a class="header__callback-btn btn" href="#">Перезвонить мне</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="promo">
+    <div class="container">
+      <div class="promo__inner">
+        <div class="promo__descr">
+          <h1 class="promo__title">
+            Сделаем ваш <span class="promo__span-1">Дом</span>
+            <span class="promo__span-2">
+              готовым к комфортному проживанию
+            </span>
+          </h1>
+          <p class="promo__text">
+            Строительство деревянных домов «под ключ»:<br> коттеджи, беседки, бани, дома из клееного бруса
+          </p>
+          <div class="promo__box">
+            <p class="promo__item">
+              Демонтаж
+            </p>
+            <p class="promo__item">
+              Бетонные<br>работы
+            </p>
+            <p class="promo__item">
+              Возведение<br>стен
+            </p>
+            <p class="promo__item">
+              Кровельные<br>работы
+            </p>
+            <p class="promo__item">
+              Отделка<br>фасадов
+            </p>
+            <p class="promo__item">
+              Инженерные<br>работы
+            </p>
+          </div>
+        </div>
+        <div class="promo__calc">
+          <h4 class="promo__calc-title">
+            Заказать расчет
+          </h4>
+          <p class="promo__calc-text">
+            Оказываем услуги комплексно, совмещая отдельные виды работ
+          </p>
+          <img class="promo__calc-img" src="images/promo-img.png" alt="image">
+          <a class="calc-btn btn" href="#">Заказать расчет</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h3 class="services__title">
+        Оказываем услуги комплексно,<br>
+        <span>совмещая отдельные виды работ</span>
+      </h3>
+      <div class="services__box">
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Каркасные дома
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-1.png" alt="image">
+        </div>
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Дома из клеёного бруса
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-2.png" alt="image">
+        </div>
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Дома из брёвен
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-3.png" alt="image">
+        </div>
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Фахверковые дома
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-4.png" alt="image">
+        </div>
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Беседки
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-5.png" alt="image">
+        </div>
+        <div class="services__item">
+          <h6 class="services__item-title">
+            Ремонт и отделка
+          </h6>
+          <a class="services__item-btn btn" href="#">
+            Подробнее
+          </a>
+          <img class="services__item-img" src="images/services-img-6.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-popup">
+    <div class="container">
+      <h3 class="video-popup__title">
+        Приступим cегодня
+      </h3>
+      <h6 class="video-popup__subtitle">
+        Напишите нам, чтобы получить персональное предложение
+      </h6>
+      <div class="video-popup__inner">
+        <div class="video-popup__descr">
+          <h6 class="video-popup__descr-title">
+            Cтроительство дома не покажешь картинкой
+          </h6>
+          <p class="video-popup__descr-text">
+            За каждым домом стоит целая история, смотри полезные презентации у нас на канале.
+          </p>
+          <a class="calc-btn btn" href="#">Заказать расчет</a>
+        </div>
+        <div class="video-popup__preveiw">
+          <a class="video-popup__link" href="#">
+            <img class="video-popup__imgbtn" src="images/video-popup-icon.svg" alt="play button">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h3 class="features__title">
+        Заботимся о Вашем <span>спокойствии</span>
+      </h3>
+      <div class="features__box">
+        <div class="features__item features__item-1">
+          <h6 class="features__item-title">
+            Не поднимаем стоимость
+          </h6>
+          <p class="features__item-text">
+            Фиксируем <span>стоимость</span> работ в договоре
+          </p>
+        </div>
+        <div class="features__item features__item-2">
+          <h6 class="features__item-title">
+            Поэтапная оплата
+          </h6>
+          <p class="features__item-text">
+            Оплата каждого вида работ <span>разбита</span> на 2 части
+            (50% аванс 50% по завершению)
+          </p>
+        </div>
+        <div class="features__item features__item-3">
+          <h6 class="features__item-title">
+            Соблюдаем сроки
+          </h6>
+          <p class="features__item-text">
+            Несем <span>ответственность</span> за соблюдение сроков.
+          </p>
+        </div>
+        <div class="features__item features__item-4">
+          <h6 class="features__item-title">
+            Экологичность
+          </h6>
+          <p class="features__item-text">
+            Дом <span>строится</span> из натуральных материалов
+          </p>
+        </div>
+        <div class="features__item features__item-5">
+          <h6 class="features__item-title">
+            Самостоятельно
+          </h6>
+          <p class="features__item-text">
+            Закупаем и <span>доставляем</span> на объект, качественные материалы и расходники
+          </p>
+        </div>
+        <div class="features__item features__item-6">
+          <h6 class="features__item-title">
+            Проводим уборку
+          </h6>
+          <p class="features__item-text">
+            В процессе работ и <span>вывозим</span> мусор после завершения работ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h3 class="gallery__title">
+      <span>Посмотрите на готовые дома</span> с комплексом
+      отделки и прокладки коммуникаций.
+    </h3>
+    <div class="gallery__box">
+      <img class="gallery__item" src="images/gallery-img-1.jpg" alt="gallery image">
+      <img class="gallery__item" src="images/gallery-img-2.jpg" alt="gallery image">
+      <img class="gallery__item" src="images/gallery-img-3.jpg" alt="gallery image">
+      <img class="gallery__item" src="images/gallery-img-4.jpg" alt="gallery image">
+      <img class="gallery__item" src="images/gallery-img-5.jpg" alt="gallery image">
+      <img class="gallery__item" src="images/gallery-img-6.jpg" alt="gallery image">
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__btn">
+        <a class="gallery-btn btn" href="#">
+          Смотреть все
+        </a>
+      </div>
+      <h3 class="advantages__title">
+        Готовы <span>начать строить дом</span>
+        с надежной компанией?
+      </h3>
+      <div class="advantages__inner">
+        <div class="advantages__photo">
+          <img class="advantages__photo-img" src="images/advantages-img.jpg" alt="image">
+          <p class="advantages__photo-text">
+            Здравствуйте, меня зовут Ярослав Доля.<br>
+            <span>Я руководитель компании</span> DOM-D
+          </p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__list-item">
+            Мы не просто <span>предоставляем</span> услуги мы отвечаем за весь комплекс работ от проектирования до
+            гарантийного обслуживания.
+          </li>
+          <li class="advantages__list-item">
+            Вы не <span>рискуете</span> своими деньгами, нервами и временем. Мы берем на себя полную материальную
+            ответственность по договору за дом, работы, сроки выполнения каждого этапа работы
+          </li>
+          <li class="advantages__list-item">
+            Наша команда стремится к полной <span>прозрачности</span> в работе, поэтому мы с удовольствием показываем
+            каждый процесс строительства, без прикрас.
+          </li>
+          <li class="advantages__list-item">
+            Мы <span>гарантируем</span> Ваше минимальное вовлечение в рутину строительства, беря на себя весь комплекс
+            строительных работ
+          </li>
+          <li class="advantages__list-item">
+            Мы <span>знаем все</span>о строительстве деревянных домов и строительных работах
+          </li>
+          <li class="advantages__list-item">
+            <span>Проектируем</span> и строим авторские дома из дерева и клееного бруса
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="advantages__box">
+      <div class="container">
+        <ul class="advantages__items">
+          <li class="advantages__item advantages__item-1">
+            лет опыта в стоительстве
+          </li>
+          <li class="advantages__item advantages__item-1">
+            специалистов в штате
+          </li>
+          <li class="advantages__item advantages__item-3">
+            построенных домов
+          </li>
+          <li class="advantages__item advantages__item-4">
+            Наши <span>ВИДЕО</span><br> об отделке и устройстве смотрите на канале <span>DoM-D</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="container">
+      <h3 class="slider__title">
+        <span>Используем только</span> экологически чистые и профессиональные материалы
+      </h3>
+      <div class="slider__box">
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-1.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-2.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-3.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-4.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-1.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-2.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-3.png" alt="image">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="images/slider-img-4.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <h3 class="contacts__title">
+        Наши контакты
+      </h3>
+      <div class="contacts__inner">
+        <div class="contacts__form contacts__item">
+          <h4 class="contacts__item-title">
+            Задать вопрос
+          </h4>
+          <p class="contacts__form-text">
+            Остались вопросы? Наши эксперты ответят вам в ближайшее рабочее время!
+          </p>
+          <form class="contacts__form-box">
+            <textarea class="contacts__form-questions" placeholder="Ваши вопросы"></textarea>
+            <input class="contact__form-tel" type="tel" placeholder="Телефон">
+            <input class="contacts__form-submit btn" type="submit" value="Отправить вопрос">
+          </form>
+        </div>
+        <div class="contacts__address contacts__item">
+          <h4 class="contacts__item-title">
+            Мы на связи
+          </h4>
+          <p class="contacts__address-address">
+            Украина, г. Одесса<br> ул. Комитетская, 24Б
+          </p>
+          <p class="contacts__address-email">
+            Эл.почта: odessadomd@gmail.com
+          </p>
+          <a class="header__social-link header__social-Viber contacts__social contacts__viber" href="#">Viber</a>
+          <a class="header__social-link header__social-Telegram contacts__social contacts__telegram"
+            href="#">Telegram</a>
+          <a class="contacts__phone-link" href="tel:+380982715035">+38 (098) 271-50-35</a>
+          <p class="contacts__address-info">
+            Мы на связи
+          </p>
+          <a class="header__callback-btn btn" href="#">Перезвонить мне</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo" href="#">
+          <img class="footer__logo-img" src="images/footer-logo-img.png" alt="logo">
+        </a>
+        <div class="footer__jobs">
+          <h5 class="footer__jobs-title">
+            Виды строительства
+          </h5>
+          <ul class="footer__jobs-list">
+            <li class="footer__jobs-li">
+              - Каркасные дома
+            </li>
+            <li class="footer__jobs-li">
+              - Дома из клеёного бруса
+            </li>
+            <li class="footer__jobs-li">
+              - Фахверковые дома
+            </li>
+            <li class="footer__jobs-li">
+              - Дома из брёвен
+            </li>
+            <li class="footer__jobs-li">
+              - Беседки
+            </li>
+            <li class="footer__jobs-li">
+              - Ремонт и отделка
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              Наши работы
+            </li>
+            <li class="footer__nav-item">
+              Отзывы клиентов
+            </li>
+            <li class="footer__nav-item">
+              Партнеры
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <h5 class="footer__contacts-title">
+            Контакты
+          </h5>
+          <p class="footer__contacts-address contacts__address-address">
+            Украина, г. Одесса<br> ул. Комитетская, 24Б
+          </p>
+          <p class="footer__contacts-email contacts__address-email">
+            Эл.почта: odessadomd@gmail.com
+          </p>
+          <a class="footer__contacts-phone contacts__phone-link" href="tel:+380982715035">+38 (098) 271-50-35</a>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/facebook-icon.svg" alt="image">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/instagramm-icon.svg" alt="image">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/footer-youtube-icon.svg" alt="image">
+              </a>
+            </li>
+            <li class="footer__social-item footer__social-text">
+              <a class="footer__social-link" href="#">
+                Свежие видео<br> у нас на канале
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
